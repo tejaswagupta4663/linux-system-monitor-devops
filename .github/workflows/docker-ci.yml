@@ -1,4 +1,4 @@
-name: Docker Build & Test
+name: Docker CI Pipeline
 
 on:
   push:
@@ -7,11 +7,11 @@ on:
   pull_request:
 
 jobs:
-  docker-build:
+  build-and-run:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout source code
         uses: actions/checkout@v4
 
       - name: Build Docker image
@@ -21,3 +21,4 @@ jobs:
       - name: Run Docker container
         run: |
           docker run --rm linux-system-monitor
+
