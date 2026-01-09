@@ -127,6 +127,44 @@ Planned enhancements include:
 -   Improving output formatting and logging
     
 
+## ☁️ AWS EC2 Deployment (Hands-on Practice)
+
+This project was **deployed and tested on an AWS EC2 Linux instance** as part of my DevOps learning journey.
+
+### 🔧 What I Did
+
+-   Launched an **Amazon EC2 instance** using Amazon Linux
+    
+-   Connected securely to the server using **SSH**
+    
+-   Installed **Docker** and **Git** on the EC2 instance
+    
+-   Cloned the project repository from **GitHub**
+    
+-   Built the Docker image directly on the **cloud server**
+    
+-   Ran the container and verified **system monitoring output**
+    
+
+### 🎯 Why This Matters
+
+This deployment helped me understand how **containerized applications run in a real cloud environment**.  
+I also learned how to **safely start and stop cloud resources** to avoid unnecessary costs.
+
+> 🔒 **Note:** The EC2 instance is stopped after testing to ensure **zero ongoing charges**.
+
+---
+
+## 🔄 CI/CD Automation (Basic)
+
+This project includes a **basic CI/CD workflow** implemented using **GitHub Actions**.
+
+-   The workflow automatically builds the **Docker image** on every push to the `main` branch
+    
+-   The container is executed during the workflow to **verify successful execution**
+    
+-   This setup helped me understand the **basics of automated build and validation pipelines**
+
 ---
 
 ## 👨‍💻 Maintained by
